@@ -236,15 +236,15 @@ INSERT INTO players (first_name, last_name, date_of_birth, age, position, contra
 ('Johnathan', 'Kovacevic', '1997-07-12', TIMESTAMPDIFF(YEAR, '1997-07-12', CURDATE()), 'D', '2025-06-30', 766667, 'UFA', 3),
 ('Samuel', 'Montembeault', '1996-10-30', TIMESTAMPDIFF(YEAR, '1996-10-30', CURDATE()), 'G', '2026-06-30', 3150000, 'UFA', 3),
 ('Cayden', 'Primeau', '1999-08-11', TIMESTAMPDIFF(YEAR, '1999-08-11', CURDATE()), 'G', '2025-06-30', 890000, 'RFA', 3),
-('Kirby', 'Dach', '2001-01-21', TIMESTAMPDIFF(YEAR, '2001-01-21', CURDATE()), 'F', '2026-06-30', 3362500, 'RFA', 3),
-('Chris', 'Wideman', '1990-01-07', TIMESTAMPDIFF(YEAR, '1990-01-07', CURDATE()), 'D', '2025-06-30', 0.00, 'UFA', 3);
+('Kirby', 'Dach', '2001-01-21', TIMESTAMPDIFF(YEAR, '2001-01-21', CURDATE()), 'F', '2026-06-30', 3362500, 'RFA', 3);
 
 -- INSERT ADDITION OF CANADIANS PLAYERS AT THE END OF THEIR CONTRACT 
 INSERT INTO players (first_name, last_name, date_of_birth, age, position, contract_end_date, contract_value, free_agent_status, franchise_id) VALUES
-('Jesse', 'Ylönen', '1999-10-03', TIMESTAMPDIFF(YEAR, '1999-10-03', CURDATE()), 'W', '2025-06-30', 0.00, 'RFA', 3),
-('Tanner', 'Pearson', '1992-08-10', TIMESTAMPDIFF(YEAR, '1992-08-10', CURDATE()), 'W', '2025-06-30', 0.00, 'UFA', 3),
-('Colin', 'White', '1997-01-30', TIMESTAMPDIFF(YEAR, '1997-01-30', CURDATE()), 'F', '2025-06-30', 0.00, 'UFA', 3),
-('Arber', 'Xhekaj', '2001-01-30', TIMESTAMPDIFF(YEAR, '2001-01-30', CURDATE()), 'D', '2025-06-30', 0.00, 'RFA', 3);
+('Jesse', 'Ylönen', '1999-10-03', TIMESTAMPDIFF(YEAR, '1999-10-03', CURDATE()), 'W', '2024-06-30', 0.00, 'RFA', 3),
+('Tanner', 'Pearson', '1992-08-10', TIMESTAMPDIFF(YEAR, '1992-08-10', CURDATE()), 'W', '2024-06-30', 0.00, 'UFA', 3),
+('Colin', 'White', '1997-01-30', TIMESTAMPDIFF(YEAR, '1997-01-30', CURDATE()), 'F', '2024-06-30', 0.00, 'UFA', 3),
+('Arber', 'Xhekaj', '2001-01-30', TIMESTAMPDIFF(YEAR, '2001-01-30', CURDATE()), 'D', '2024-06-30', 0.00, 'RFA', 3)
+('Chris', 'Wideman', '1990-01-07', TIMESTAMPDIFF(YEAR, '1990-01-07', CURDATE()), 'D', '2024-06-30', 0.00, 'UFA', 3);
 
 -- INSERT CANADIANS BUYOUT
 INSERT INTO buyout (first_name, last_name, buyout_end_date, buyout_value, franchise_id) VALUES
