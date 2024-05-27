@@ -265,7 +265,7 @@ INSERT INTO players (first_name, last_name, date_of_birth, age, position, contra
 ('John-Jason', 'Peterka', '2002-01-14', TIMESTAMPDIFF(YEAR, '2002-01-14', CURDATE()), 'W', '2025-06-30', 855833, 'RFA', 4),
 ('Rasmus', 'Dahlin', '2000-04-13', TIMESTAMPDIFF(YEAR, '2000-04-13', CURDATE()), 'D', '2032-06-30', 11000000, 'UFA', 4),
 ('Owen', 'Power', '2003-11-22', TIMESTAMPDIFF(YEAR, '2003-11-22', CURDATE()), 'D', '2031-06-30', 8350000, 'UFA', 4),
-('Mattias', 'Samuelsson', '2000-03-14', TIMESTAMPDIFF(YEAR, '2000-03-14', CURDATE()), 'D', '2030-06-30', 4285714, 'UFA', 3),
+('Mattias', 'Samuelsson', '2000-03-14', TIMESTAMPDIFF(YEAR, '2000-03-14', CURDATE()), 'D', '2030-06-30', 4285714, 'UFA', 4),
 ('Bowen', 'Byram', '2001-06-13', TIMESTAMPDIFF(YEAR, '2001-06-13', CURDATE()), 'D', '2025-06-30', 3850000, 'RFA', 4),
 ('Connor', 'Clifton', '1995-04-28', TIMESTAMPDIFF(YEAR, '1995-04-28', CURDATE()), 'D', '2026-06-30', 3333333.00, 'UFA', 4);
 
