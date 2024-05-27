@@ -168,3 +168,37 @@ INSERT INTO players (first_name, last_name, date_of_birth, age, position, contra
 
 INSERT INTO buyout (first_name, last_name, buyout_end_date, buyout_value, franchise_id) VALUES
 ('Mike', 'Reilly', '2025-06-30', 1333334.00, 1);
+
+INSERT INTO players (first_name, last_name, date_of_birth, age, position, contract_end_date, contract_value, free_agent_status, franchise_id) VALUES
+('Auston', 'Matthews', '1997-09-17', TIMESTAMPDIFF(YEAR, '1997-09-17', CURDATE()), 'F', '2028-06-30', 13250000, 'UFA', 2),
+('William', 'Nylander', '1996-05-01', TIMESTAMPDIFF(YEAR, '1996-05-01', CURDATE()), 'W', '2032-06-30', 11500000, 'UFA', 2),
+('John', 'Tavares', '1990-09-20', TIMESTAMPDIFF(YEAR, '1990-09-20', CURDATE()), 'F', '2025-06-30', 11000000, 'UFA', 2),
+('Mitchell', 'Marner', '1997-05-05', TIMESTAMPDIFF(YEAR, '1997-05-05', CURDATE()), 'W', '2025-06-30', 10903000, 'UFA', 2),
+('David', 'Kampf', '1995-01-12', TIMESTAMPDIFF(YEAR, '1995-01-12', CURDATE()), 'F', '2027-06-30', 2400000, 'UFA', 2),
+('Calle', 'Jarnkrok', '1991-09-25', TIMESTAMPDIFF(YEAR, '1991-09-25', CURDATE()), 'W', '2026-06-30', 2100000, 'UFA', 2),
+('Ryan', 'Reaves', '1987-01-20', TIMESTAMPDIFF(YEAR, '1987-01-20', CURDATE()), 'W', '2026-06-30', 1350000, 'UFA', 2),
+('Bobby', 'McMann', '1996-06-15', TIMESTAMPDIFF(YEAR, '1996-06-15', CURDATE()), 'W', '2026-06-30', 1350000, 'UFA', 2),
+('Matthew', 'Knies', '2002-10-17', TIMESTAMPDIFF(YEAR, '2002-10-17', CURDATE()), 'W', '2025-06-30', 925000, 'RFA', 2),
+('Pontus', 'Holmberg', '1999-03-09', TIMESTAMPDIFF(YEAR, '1999-03-09', CURDATE()), 'F', '2025-06-30', 800000, 'RFA', 2),
+('Morgan', 'Rielly', '1994-03-09', TIMESTAMPDIFF(YEAR, '1994-03-09', CURDATE()), 'D', '2030-06-30', 7500000, 'UFA', 2),
+('Jake', 'McCabe', '1993-10-12', TIMESTAMPDIFF(YEAR, '1993-10-12', CURDATE()), 'D', '2025-06-30', 2000000, 'UFA', 2),
+('Simon', 'Benoit', '1998-09-19', TIMESTAMPDIFF(YEAR, '1998-09-19', CURDATE()), 'D', '2027-06-30', 1350000, 'UFA', 2),
+('Conor', 'Timmins', '1998-09-18', TIMESTAMPDIFF(YEAR, '1998-09-18', CURDATE()), 'D', '2025-06-30', 1100000, 'RFA', 2),
+('Cade', 'Webber', '2001-01-05', TIMESTAMPDIFF(YEAR, '2001-01-05', CURDATE()), 'D', '2025-06-30', 850000, 'RFA', 2),
+('Joseph', 'Woll', '1998-07-12', TIMESTAMPDIFF(YEAR, '1998-07-12', CURDATE()), 'G', '2025-06-30', 766667, 'RFA', 2);
+
+INSERT INTO players (first_name, last_name, date_of_birth, age, position, contract_end_date, contract_value, free_agent_status, franchise_id) VALUES
+('Dewar', 'Connor','1999-06-26', TIMESTAMPDIFF(YEAR, '1999-06-26', CURDATE()), 'W', '2024-06-30', 0.00, 'RFA', 2),
+('Gregor', 'Noah', '1998-07-28', TIMESTAMPDIFF(YEAR, '1998-07-28', CURDATE()), 'W', '2024-06-30', 0.00, 'RFA', 2),
+('Nicholas', 'Robertson','2001-09-11', TIMESTAMPDIFF(YEAR, '2001-09-11', CURDATE()), 'W', '2024-06-30', 0.00, 'RFA', 2),
+('Tyler', 'Bertuzzi', '1995-02-24', TIMESTAMPDIFF(YEAR, '1995-02-24', CURDATE()), 'W', '2024-06-30', 0.00, 'UFA', 2),
+('Max', 'Domi', '1995-03-02', TIMESTAMPDIFF(YEAR, '1995-03-02', CURDATE()), 'W', '2024-06-30', 0.00, 'UFA', 2),
+('John', 'Klingberg', '1992-08-14', TIMESTAMPDIFF(YEAR, '1992-08-14', CURDATE()), 'D', '2024-06-30', 0.00, 'UFA', 2),
+('Timothy', 'Liljegren', '1999-04-30', TIMESTAMPDIFF(YEAR, '1999-04-30', CURDATE()), 'D', '2024-06-30', 0.00, 'RFA', 2),
+('TJ', 'Brodie', '1990-06-07', TIMESTAMPDIFF(YEAR, '1990-06-07', CURDATE()), 'D', '2024-06-30', 0.00, 'UFA', 2),
+('Joel', 'Edmundson', '1993-06-28', TIMESTAMPDIFF(YEAR, '1993-06-28', CURDATE()), 'D', '2024-06-30', 0.00, 'UFA', 2),
+('Mark', 'Giordano', '1983-10-03', TIMESTAMPDIFF(YEAR, '1983-10-03', CURDATE()), 'D', '2024-06-30', 0.00, 'UFA', 2),
+('Ilya', 'Lyubushkin', '1994-04-06', TIMESTAMPDIFF(YEAR, '1983-10-03', CURDATE()), 'D', '2024-06-30', 0.00, 'UFA', 2),
+('Matt', 'Murray', '1994-05-25', TIMESTAMPDIFF(YEAR, '1994-05-25', CURDATE()), 'G', '2024-06-30', 0.00, 'UFA', 2),
+('Ilya', 'Samsonov', '1997-02-22', TIMESTAMPDIFF(YEAR, '1997-02-22', CURDATE()), 'G', '2024-06-30', 0.00, 'UFA', 2),
+('Martin', 'Jones', '1990-01-10', TIMESTAMPDIFF(YEAR, '1990-01-10', CURDATE()), 'G', '2024-06-30', 0.00, 'UFA', 2);
