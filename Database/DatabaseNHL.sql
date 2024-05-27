@@ -1,4 +1,6 @@
 USE nhl;
+
+-- CREATE FRANCHISE TABLE
 CREATE TABLE franchises (
     franchise_id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(30) NOT NULL,
@@ -10,6 +12,7 @@ CREATE TABLE franchises (
     division ENUM('Atlantic', 'Metropolitan', 'Central', 'Pacific')
 );
 
+-- CREATE PLAYERS TABLE
 CREATE TABLE players (
     player_id INT AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(25) NOT NULL,
@@ -24,6 +27,7 @@ CREATE TABLE players (
     FOREIGN KEY (franchise_id) REFERENCES franchises(franchise_id)
 );
 
+-- CREATE BUYOUT TABLE
 CREATE TABLE buyout (
     player_id INT AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(25) NOT NULL,
@@ -35,6 +39,7 @@ CREATE TABLE buyout (
     FOREIGN KEY (franchise_id) REFERENCES franchises(franchise_id)
 );
 
+-- INSERT FRANCHISE INFORMATION
 INSERT INTO franchises (name, city, state, country, conference, division) VALUES 
 ('Boston Bruins', 'Boston', 'MA', 'USA', 'Est', 'Atlantic'), 
 ('Toronto Maple Leafs', 'Toronto', 'ON', 'Canada', 'Est', 'Atlantic'), 
@@ -70,11 +75,14 @@ INSERT INTO franchises (name, city, state, country, conference, division) VALUES
 ('Seattle Kraken', 'Seattle', 'WA', 'USA', 'West', 'Pacific'), 
 ('Vancouver Canucks', 'Vancouver', 'BC', 'Canada', 'West', 'Pacific'), 
 ('Vegas Golden Knights', 'Paradise', 'NV', 'USA', 'West', 'Pacific');
+
+-- INSERT 2024 SALARY CAP
 SET SQL_SAFE_UPDATES = 0;
 UPDATE franchises
 SET Salary_Cap = 87700000.00;
 SET SQL_SAFE_UPDATES = 1;
 
+-- INSERT TRIGGER FOR EACH ADDITIONAL PLAYER 
 DELIMITER $$
 
 CREATE TRIGGER after_player_insert
@@ -88,6 +96,7 @@ END $$
 
 DELIMITER ;
 
+-- INSERT TRIGGER FOR EACH ADDITIONAL BUYOUT 
 DELIMITER $$
 
 CREATE TRIGGER after_buyout_insert
@@ -101,7 +110,7 @@ END $$
 
 DELIMITER ;
 
-
+-- INSERT TRIGGER FOR EACH REMOVE PLAYER 
 DELIMITER $$
 
 CREATE TRIGGER after_player_delete 
@@ -117,6 +126,7 @@ DELIMITER ;
 
 DELIMITER $$
 
+-- INSERT TRIGGER FOR EACH REMOVE BUYOUT
 CREATE TRIGGER after_buyout_delete 
 AFTER DELETE ON buyout 
 FOR EACH ROW 
@@ -128,7 +138,7 @@ END $$
 
 DELIMITER ;
 
-
+-- INSERT BRUINS PLAYERS
 INSERT INTO players (first_name, last_name, date_of_birth, age, position, contract_end_date, contract_value, free_agent_status, franchise_id) VALUES
 ('Brad', 'Marchand', '1988-05-11', TIMESTAMPDIFF(YEAR, '1988-05-11', CURDATE()), 'W', '2025-06-30', 6125000.00, 'UFA', 1),
 ('David', 'Pastrnak', '1996-05-25', TIMESTAMPDIFF(YEAR, '1996-05-25', CURDATE()), 'W', '2031-06-30', 11250000.00, 'UFA', 1),
@@ -153,6 +163,7 @@ INSERT INTO players (first_name, last_name, date_of_birth, age, position, contra
 ('Linus', 'Ullmark', '1993-07-31', TIMESTAMPDIFF(YEAR, '1993-07-31', CURDATE()), 'G', '2025-06-30', 5000000.00, 'UFA', 1)
 ;
 
+-- INSERT ADDITION OF BRUINS PLAYERS AT THE END OF THEIR CONTRACT 
 INSERT INTO players (first_name, last_name, date_of_birth, age, position, contract_end_date, contract_value, free_agent_status, franchise_id) VALUES
 ('Jesper', 'Boqvist', '1998-10-30', TIMESTAMPDIFF(YEAR, '1998-10-30', CURDATE()), 'F', '2024-06-30', 0.00 ,'RFA', 1),
 ('Jake', 'DeBrusk', '1996-10-17', TIMESTAMPDIFF(YEAR, '1996-10-17', CURDATE()), 'W', '2024-06-30', 0.00 ,'UFA', 1),
@@ -166,9 +177,11 @@ INSERT INTO players (first_name, last_name, date_of_birth, age, position, contra
 ('Brandon', 'Bussi', '1998-06-25', TIMESTAMPDIFF(YEAR, '1998-06-25', CURDATE()), 'G', '2024-06-30', 0.00 ,'RFA', 1)
 ;
 
+-- INSERT BRUINS BUYOUT
 INSERT INTO buyout (first_name, last_name, buyout_end_date, buyout_value, franchise_id) VALUES
 ('Mike', 'Reilly', '2025-06-30', 1333334.00, 1);
 
+-- INSERT MAPLE LEAFS PLAYERS
 INSERT INTO players (first_name, last_name, date_of_birth, age, position, contract_end_date, contract_value, free_agent_status, franchise_id) VALUES
 ('Auston', 'Matthews', '1997-09-17', TIMESTAMPDIFF(YEAR, '1997-09-17', CURDATE()), 'F', '2028-06-30', 13250000, 'UFA', 2),
 ('William', 'Nylander', '1996-05-01', TIMESTAMPDIFF(YEAR, '1996-05-01', CURDATE()), 'W', '2032-06-30', 11500000, 'UFA', 2),
@@ -187,6 +200,7 @@ INSERT INTO players (first_name, last_name, date_of_birth, age, position, contra
 ('Cade', 'Webber', '2001-01-05', TIMESTAMPDIFF(YEAR, '2001-01-05', CURDATE()), 'D', '2025-06-30', 850000, 'RFA', 2),
 ('Joseph', 'Woll', '1998-07-12', TIMESTAMPDIFF(YEAR, '1998-07-12', CURDATE()), 'G', '2025-06-30', 766667, 'RFA', 2);
 
+-- INSERT ADDITION OF MAPLE LEAFS PLAYERS AT THE END OF THEIR CONTRACT 
 INSERT INTO players (first_name, last_name, date_of_birth, age, position, contract_end_date, contract_value, free_agent_status, franchise_id) VALUES
 ('Dewar', 'Connor','1999-06-26', TIMESTAMPDIFF(YEAR, '1999-06-26', CURDATE()), 'W', '2024-06-30', 0.00, 'RFA', 2),
 ('Gregor', 'Noah', '1998-07-28', TIMESTAMPDIFF(YEAR, '1998-07-28', CURDATE()), 'W', '2024-06-30', 0.00, 'RFA', 2),
@@ -203,7 +217,7 @@ INSERT INTO players (first_name, last_name, date_of_birth, age, position, contra
 ('Ilya', 'Samsonov', '1997-02-22', TIMESTAMPDIFF(YEAR, '1997-02-22', CURDATE()), 'G', '2024-06-30', 0.00, 'UFA', 2),
 ('Martin', 'Jones', '1990-01-10', TIMESTAMPDIFF(YEAR, '1990-01-10', CURDATE()), 'G', '2024-06-30', 0.00, 'UFA', 2);
 
-
+-- INSERT CANADIANS PLAYERS
 INSERT INTO players (first_name, last_name, date_of_birth, age, position, contract_end_date, contract_value, free_agent_status, franchise_id) VALUES
 ('Nick', 'Suzuki', '1999-08-10', TIMESTAMPDIFF(YEAR, '1999-08-10', CURDATE()), 'F', '2030-06-30', 7875000, 'UFA', 3),
 ('Cole', 'Caufield', '2001-01-02', TIMESTAMPDIFF(YEAR, '2001-01-02', CURDATE()), 'W', '2030-06-30', 7850000, 'UFA', 3),
@@ -227,12 +241,14 @@ INSERT INTO players (first_name, last_name, date_of_birth, age, position, contra
 ('Kirby', 'Dach', '2001-01-21', TIMESTAMPDIFF(YEAR, '2001-01-21', CURDATE()), 'F', '2026-06-30', 3362500, 'RFA', 3),
 ('Chris', 'Wideman', '1990-01-07', TIMESTAMPDIFF(YEAR, '1990-01-07', CURDATE()), 'D', '2025-06-30', 0.00, 'UFA', 3);
 
+-- INSERT ADDITION OF CANADIANS PLAYERS AT THE END OF THEIR CONTRACT 
 INSERT INTO players (first_name, last_name, date_of_birth, age, position, contract_end_date, contract_value, free_agent_status, franchise_id) VALUES
 ('Jesse', 'Ylönen', '1999-10-03', TIMESTAMPDIFF(YEAR, '1999-10-03', CURDATE()), 'W', '2025-06-30', 0.00, 'RFA', 3),
 ('Tanner', 'Pearson', '1992-08-10', TIMESTAMPDIFF(YEAR, '1992-08-10', CURDATE()), 'W', '2025-06-30', 0.00, 'UFA', 3),
 ('Colin', 'White', '1997-01-30', TIMESTAMPDIFF(YEAR, '1997-01-30', CURDATE()), 'F', '2025-06-30', 0.00, 'UFA', 3),
 ('Arber', 'Xhekaj', '2001-01-30', TIMESTAMPDIFF(YEAR, '2001-01-30', CURDATE()), 'D', '2025-06-30', 0.00, 'RFA', 3);
 
+-- INSERT CANADIANS BUYOUT
 INSERT INTO buyout (first_name, last_name, buyout_end_date, buyout_value, franchise_id) VALUES
 ('Carey', 'Price', '2026-06-30', 10500000.00, 3),
 ('Jeff', 'Petry', '2025-06-30',  2343750.00, 3),
