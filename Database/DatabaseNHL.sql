@@ -8,7 +8,7 @@ CREATE TABLE franchises (
     state VARCHAR(30),
     country VARCHAR(20) NOT NULL, 
     Salary_Cap DECIMAL(15, 2), 
-	conference ENUM('Est', 'West'),
+    conference ENUM('Est', 'West'),
     division ENUM('Atlantic', 'Metropolitan', 'Central', 'Pacific')
 );
 
@@ -34,7 +34,6 @@ CREATE TABLE buyout (
     last_name VARCHAR(25) NOT NULL,
     buyout_end_date DATE,
     buyout_value DECIMAL(15, 2),
-    
     franchise_id INT,
     FOREIGN KEY (franchise_id) REFERENCES franchises(franchise_id)
 );
@@ -147,7 +146,6 @@ INSERT INTO players (first_name, last_name, date_of_birth, age, position, contra
 ('Charlie', 'Coyle', '1992-03-02', TIMESTAMPDIFF(YEAR, '1992-03-02', CURDATE()), 'F', '2026-06-30', 5250000.00, 'UFA', 1),
 ('Nick', 'Foligno', '1987-10-31', TIMESTAMPDIFF(YEAR, '1987-10-31', CURDATE()), 'W', '2026-06-30', 4500000.00, 'UFA', 17),
 ('Trent', 'Frederic', '1998-02-11', TIMESTAMPDIFF(YEAR, '1998-02-11', CURDATE()), 'F', '2025-06-30', 2300000.00, 'UFA', 1),
-('Connor', 'Clifton', '1995-04-28', TIMESTAMPDIFF(YEAR, '1995-04-28', CURDATE()), 'D', '2026-06-30', 3333333.00, 'UFA', 4),
 ('Morgan', 'Geekie', '1998-07-20', TIMESTAMPDIFF(YEAR, '1998-07-20', CURDATE()), 'W', '2025-06-30', 2000000.00, 'RFA', 1),
 ('John', 'Beecher', '2001-04-05', TIMESTAMPDIFF(YEAR, '2001-04-05', CURDATE()), 'F', '2025-06-30', 925000.00, 'RFA', 1),
 ('Patrick', 'Brown', '1992-05-29', TIMESTAMPDIFF(YEAR, '1992-05-29', CURDATE()), 'F', '2025-06-30', 800000.00, 'UFA', 1),
@@ -253,3 +251,35 @@ INSERT INTO buyout (first_name, last_name, buyout_end_date, buyout_value, franch
 ('Carey', 'Price', '2026-06-30', 10500000.00, 3),
 ('Jeff', 'Petry', '2025-06-30',  2343750.00, 3),
 ('Jake', 'Allen', '2025-06-30',  1925000.00, 3);
+
+
+-- INSERT SABRES PLAYERS
+INSERT INTO players (first_name, last_name, date_of_birth, age, position, contract_end_date, contract_value, free_agent_status, franchise_id) VALUES
+('Jeff', 'Skinner', '1992-05-16', TIMESTAMPDIFF(YEAR, '1992-05-16', CURDATE()), 'W', '2027-06-30', 9000000, 'UFA', 4),
+('Tage', 'Thompson', '1997-10-30', TIMESTAMPDIFF(YEAR, '1997-10-30', CURDATE()), 'F', '2030-06-30', 7142857, 'UFA', 4),
+('Dylan', 'Cozens', '2001-02-09', TIMESTAMPDIFF(YEAR, '2001-02-09', CURDATE()), 'f', '2030-06-30', 7100000, 'UFA', 4),
+('Alex', 'Tuch', '1996-05-10', TIMESTAMPDIFF(YEAR, '1996-05-10', CURDATE()), 'W', '2026-06-30', 4750000, 'UFA', 4),
+('Jordan', 'Greenway', '1997-02-16', TIMESTAMPDIFF(YEAR, '1997-02-16', CURDATE()), 'W', '2025-06-30', 3000000, 'UFA', 4),
+('Zach', 'Benson', '2004-05-12', TIMESTAMPDIFF(YEAR, '2004-05-12', CURDATE()), 'W', '2026-06-30', 950000, 'RFA', 4),
+('Jack', 'Quinn', '2002-09-19', TIMESTAMPDIFF(YEAR, '2002-09-19', CURDATE()), 'W', '2025-06-30', 863333, 'RFA', 4),
+('John-Jason', 'Peterka', '2002-01-14', TIMESTAMPDIFF(YEAR, '2002-01-14', CURDATE()), 'W', '2025-06-30', 855833, 'RFA', 4),
+('Rasmus', 'Dahlin', '2000-04-13', TIMESTAMPDIFF(YEAR, '2000-04-13', CURDATE()), 'D', '2032-06-30', 11000000, 'UFA', 4),
+('Owen', 'Power', '2003-11-22', TIMESTAMPDIFF(YEAR, '2003-11-22', CURDATE()), 'D', '2031-06-30', 8350000, 'UFA', 4),
+('Mattias', 'Samuelsson', '2000-03-14', TIMESTAMPDIFF(YEAR, '2000-03-14', CURDATE()), 'D', '2030-06-30', 4285714, 'UFA', 3),
+('Bowen', 'Byram', '2001-06-13', TIMESTAMPDIFF(YEAR, '2001-06-13', CURDATE()), 'D', '2025-06-30', 3850000, 'RFA', 4),
+('Connor', 'Clifton', '1995-04-28', TIMESTAMPDIFF(YEAR, '1995-04-28', CURDATE()), 'D', '2026-06-30', 3333333.00, 'UFA', 4);
+
+-- INSERT ADDITION OF SABRES PLAYERS AT THE END OF THEIR CONTRACT 
+INSERT INTO players (first_name, last_name, date_of_birth, age, position, contract_end_date, contract_value, free_agent_status, franchise_id) VALUES
+('Peyton', 'Krebs', '2001-01-26', TIMESTAMPDIFF(YEAR, '2001-01-26', CURDATE()), 'F', '2024-06-30', 0.00, 'RFA', 4),
+('Zemgus', 'Girgensons', '1994-01-05', TIMESTAMPDIFF(YEAR, '1994-01-05', CURDATE()), 'W', '2024-06-30', 0.00, 'UFA', 4),
+('Tyson', 'Jost', '1998-03-14', TIMESTAMPDIFF(YEAR, '1998-03-14', CURDATE()), 'F', '2024-06-30', 0.00, 'UFA', 4),
+('Victor', 'Olofsson', '1996-07-18', TIMESTAMPDIFF(YEAR, '1996-07-18', CURDATE()), 'W', '2024-06-30', 0.00, 'UFA', 4),
+('Eric', 'Robinson', '1995-06-14', TIMESTAMPDIFF(YEAR, '1995-06-14', CURDATE()), 'W', '2024-06-30', 0.00, 'UFA', 4),
+('Jacob', 'Bryson', '1997-11-18', TIMESTAMPDIFF(YEAR, '1997-11-18', CURDATE()), 'D', '2024-06-30', 0.00, 'RFA', 4),
+('Kale', 'Clague', '1998-06-05', TIMESTAMPDIFF(YEAR, '1998-06-05', CURDATE()), 'D', '2024-06-30', 0.00, 'RFA', 4),
+('Henri', 'Jokiharju', '1999-06-17', TIMESTAMPDIFF(YEAR, '1999-06-17', CURDATE()), 'D', '2024-06-30', 0.00, 'RFA', 4),
+('Ukko-Pekka', 'Luukkonen', '1999-03-09', TIMESTAMPDIFF(YEAR, '1999-03-09', CURDATE()), 'G', '2024-06-30', 0.00, 'RFA', 4),
+('Eric', 'Comrie', '1995-07-06', TIMESTAMPDIFF(YEAR, '1995-07-06', CURDATE()), 'G', '2024-06-30', 0.00, 'UFA', 4);
+
+SELECT * FROM franchises;
