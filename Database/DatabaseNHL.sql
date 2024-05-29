@@ -558,4 +558,37 @@ INSERT INTO players (first_name, last_name, date_of_birth, age, position, contra
 ('Mike', 'Reilly', '1993-07-13', TIMESTAMPDIFF(YEAR, '1993-07-13', CURDATE()), 'D', '2024-06-30', 0, 'UFA', 12),
 ('Robin', 'Salo', '1998-10-13', TIMESTAMPDIFF(YEAR, '1998-10-13', CURDATE()), 'D', '2024-06-30', 0, 'UFA', 12);
 
+-- INSERT RANGERS PLAYERS
+INSERT INTO players (first_name, last_name, date_of_birth, age, position, contract_end_date, contract_value, free_agent_status, franchise_id) VALUES
+('Artemi', 'Panarin', '1991-10-30', TIMESTAMPDIFF(YEAR, '1991-10-30', CURDATE()), 'W', '2026-06-30', 11642857, 'UFA', 13),
+('Mika', 'Zibanejad', '1993-04-18', TIMESTAMPDIFF(YEAR, '1993-04-18', CURDATE()), 'F', '2030-06-30', 8500000, 'UFA', 13),
+('Chris', 'Kreider', '1991-04-30', TIMESTAMPDIFF(YEAR, '1991-04-30', CURDATE()), 'W', '2027-06-30', 6500000, 'UFA', 13),
+('Vincent', 'Trocheck', '1993-07-11', TIMESTAMPDIFF(YEAR, '1993-07-11', CURDATE()), 'F', '2029-06-30', 5625000, 'UFA', 13),
+('Filip', 'Chytil', '1999-09-05', TIMESTAMPDIFF(YEAR, '1999-09-05', CURDATE()), 'F', '2027-06-30', 4437500, 'UFA', 13),
+('Barclay', 'Goodrow', '1993-02-26', TIMESTAMPDIFF(YEAR, '1993-02-26', CURDATE()), 'F', '2027-06-30', 3641667, 'UFA', 13),
+('Alexis', 'Lafrenière', '2001-10-11', TIMESTAMPDIFF(YEAR, '2001-10-11', CURDATE()), 'W', '2025-06-30', 2325000, 'RFA', 13),
+('Adam', 'Edström', '2000-10-28', TIMESTAMPDIFF(YEAR, '2000-10-28', CURDATE()), 'F', '2025-06-30', 846667, 'RFA', 13),
+('Will', 'Cuylle', '2002-02-05', TIMESTAMPDIFF(YEAR, '2002-02-05', CURDATE()), 'W', '2025-06-30', 828333, 'RFA', 13),
+('Matt', 'Rempe', '2002-04-12', TIMESTAMPDIFF(YEAR, '2002-04-12', CURDATE()), 'F', '2025-06-30', 820000, 'RFA', 13),
+('Jimmy', 'Vesey', '1993-05-26', TIMESTAMPDIFF(YEAR, '1993-05-26', CURDATE()), 'W', '2025-06-30', 800000, 'UFA', 13),
+('Jonny', 'Brodzinski', '1993-06-19', TIMESTAMPDIFF(YEAR, '1993-06-19', CURDATE()), 'F', '2026-06-30', 787500, 'UFA', 13),
+('Adam', 'Fox', '1998-02-17', TIMESTAMPDIFF(YEAR, '1998-02-17', CURDATE()), 'D', '2029-06-30', 9500000, 'UFA', 13),
+('Jacob', 'Trouba', '1994-02-26', TIMESTAMPDIFF(YEAR, '1994-02-26', CURDATE()), 'D', '2026-06-30', 8000000, 'UFA', 13),
+('K\'Andre', 'Miller', '2000-01-21', TIMESTAMPDIFF(YEAR, '2000-01-21', CURDATE()), 'D', '2025-06-30', 3872000, 'RFA', 13),
+('Zachary', 'Jones', '2000-10-18', TIMESTAMPDIFF(YEAR, '2000-10-18', CURDATE()), 'D', '2025-06-30', 812500, 'RFA', 13),
+('Igor', 'Shesterkin', '1995-12-30', TIMESTAMPDIFF(YEAR, '1995-12-30', CURDATE()), 'G', '2025-06-30', 5666667, 'UFA', 13),
+('Jonathan', 'Quick', '1986-01-21', TIMESTAMPDIFF(YEAR, '1986-01-21', CURDATE()), 'G', '2025-06-30', 1275000, 'UFA', 13),
+('Louis', 'Domingue', '1992-03-06', TIMESTAMPDIFF(YEAR, '1992-03-06', CURDATE()), 'G', '2025-06-30', 775000, 'UFA', 13);
+
+-- INSERT ADDITION OF RANGERS PLAYERS AT THE END OF THEIR CONTRACT 
+INSERT INTO players (first_name, last_name, date_of_birth, age, position, contract_end_date, contract_value, free_agent_status, franchise_id) VALUES
+('Kaapo', 'Kakko', '2001-02-13', TIMESTAMPDIFF(YEAR, '2001-02-13', CURDATE()), 'W', '2024-06-30', 0, 'RFA', 13),
+('Jack', 'Roslovic', '1997-01-29', TIMESTAMPDIFF(YEAR, '1997-01-29', CURDATE()), 'F', '2024-06-30', 0, 'UFA', 13),
+('Alexander', 'Wennberg', '1994-09-22', TIMESTAMPDIFF(YEAR, '1994-09-22', CURDATE()), 'F', '2024-06-30', 0, 'UFA', 13),
+('Blake', 'Wheeler', '1986-08-31', TIMESTAMPDIFF(YEAR, '1986-08-31', CURDATE()), 'W', '2024-06-30', 0, 'UFA', 13),
+('Ryan', 'Lindgren', '1998-02-11', TIMESTAMPDIFF(YEAR, '1998-02-11', CURDATE()), 'D', '2024-06-30', 0, 'RFA', 13),
+('Braden', 'Schneider', '2001-09-20', TIMESTAMPDIFF(YEAR, '2001-09-20', CURDATE()), 'D', '2024-06-30', 0, 'RFA', 13),
+('Erik', 'Gustafsson', '1992-03-14', TIMESTAMPDIFF(YEAR, '1992-03-14', CURDATE()), 'D', '2024-06-30', 0, 'UFA', 13),
+('Chad', 'Ruhwedel', '1990-05-07', TIMESTAMPDIFF(YEAR, '1990-05-07', CURDATE()), 'D', '2024-06-30', 0, 'UFA', 13);
+
 select * from franchises;
