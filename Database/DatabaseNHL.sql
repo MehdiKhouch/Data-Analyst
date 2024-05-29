@@ -484,4 +484,41 @@ INSERT INTO players (first_name, last_name, date_of_birth, age, position, contra
 -- INSERT COLUMBUS BUYOUT
 INSERT INTO buyout (first_name, last_name, buyout_end_date, buyout_value, franchise_id) VALUES
 ('Alexander', 'Wennberg', '2025-06-30', 891667, 10);
+
+-- INSERT DEVILS PLAYERS
+INSERT INTO players (first_name, last_name, date_of_birth, age, position, contract_end_date, contract_value, free_agent_status, franchise_id) VALUES
+('Timo', 'Meier', '1996-10-08', TIMESTAMPDIFF(YEAR, '1996-10-08', CURDATE()), 'W', '2031-06-30', 8800000, 'UFA', 11),
+('Jack', 'Hughes', '2001-05-14', TIMESTAMPDIFF(YEAR, '2001-05-14', CURDATE()), 'F', '2030-06-30', 8000000, 'UFA', 11),
+('Jesper', 'Bratt', '1998-07-30', TIMESTAMPDIFF(YEAR, '1998-07-30', CURDATE()), 'W', '2031-06-30', 7875000, 'UFA', 11),
+('Nico', 'Hischier', '1999-01-04', TIMESTAMPDIFF(YEAR, '1999-01-04', CURDATE()), 'F', '2027-06-30', 7250000, 'UFA', 11),
+('Ondrej', 'Palat', '1991-03-28', TIMESTAMPDIFF(YEAR, '1991-03-28', CURDATE()), 'W', '2027-06-30', 6000000, 'UFA', 11),
+('Erik', 'Haula', '1991-03-23', TIMESTAMPDIFF(YEAR, '1991-03-23', CURDATE()), 'F', '2026-06-30', 3150000, 'UFA', 11),
+('Curtis', 'Lazar', '1995-02-02', TIMESTAMPDIFF(YEAR, '1995-02-02', CURDATE()), 'F', '2025-06-30', 1000000, 'UFA', 11),
+('Alexander', 'Holtz', '2002-01-23', TIMESTAMPDIFF(YEAR, '2002-01-23', CURDATE()), 'W', '2025-06-30', 894167, 'RFA', 11),
+('Dougie', 'Hamilton', '1993-06-17', TIMESTAMPDIFF(YEAR, '1993-06-17', CURDATE()), 'D', '2028-06-30', 9000000, 'UFA', 11),
+('Nathan', 'Bastian', '1997-12-06', TIMESTAMPDIFF(YEAR, '1997-12-06', CURDATE()), 'W', '2025-06-30', 1350000, 'UFA', 11),
+('John', 'Marino', '1997-05-21', TIMESTAMPDIFF(YEAR, '1997-05-21', CURDATE()), 'D', '2027-06-30', 4400000, 'UFA', 11),
+('Jonas', 'Siegenthaler', '1997-05-06', TIMESTAMPDIFF(YEAR, '1997-05-06', CURDATE()), 'D', '2028-06-30', 3400000, 'UFA', 11),
+('Kurtis', 'MacDermid', '1994-03-25', TIMESTAMPDIFF(YEAR, '1994-03-25', CURDATE()), 'D', '2027-06-30', 1150000, 'UFA', 11),
+('Kevin', 'Bahl', '2000-06-27', TIMESTAMPDIFF(YEAR, '2000-06-27', CURDATE()), 'D', '2025-06-30', 1050000, 'RFA', 11),
+('Luke', 'Hughes', '2003-09-09', TIMESTAMPDIFF(YEAR, '2003-09-09', CURDATE()), 'D', '2025-06-30', 925000, 'RFA', 11),
+('Simon', 'Nemec', '2004-02-15', TIMESTAMPDIFF(YEAR, '2004-02-15', CURDATE()), 'D', '2026-06-30', 918333, 'RFA', 11),
+('Jake', 'Allen', '1990-08-07', TIMESTAMPDIFF(YEAR, '1990-08-07', CURDATE()), 'G', '2025-06-30', 1925000, 'UFA', 11);
+
+
+-- INSERT ADDITION OF DEVILS PLAYERS AT THE END OF THEIR CONTRACT 
+INSERT INTO players (first_name, last_name, date_of_birth, age, position, contract_end_date, contract_value, free_agent_status, franchise_id) VALUES
+('Nolan', 'Foote', '2000-11-29', TIMESTAMPDIFF(YEAR, '2000-11-29', CURDATE()), 'W', '2024-06-30', 0, 'RFA', 11),
+('Dawson', 'Mercer', '2001-10-27', TIMESTAMPDIFF(YEAR, '2001-10-27', CURDATE()), 'F', '2024-06-30', 0, 'RFA', 11),
+('Tomas', 'Nosek', '1992-09-01', TIMESTAMPDIFF(YEAR, '1992-09-01', CURDATE()), 'F', '2024-06-30', 0, 'UFA', 11),
+('Chris', 'Tierney', '1994-07-01', TIMESTAMPDIFF(YEAR, '1994-07-01', CURDATE()), 'F', '2024-06-30', 0, 'UFA', 11),
+('Nick', 'DeSimone', '1994-11-21', TIMESTAMPDIFF(YEAR, '1994-11-21', CURDATE()), 'D', '2024-06-30', 0, 'UFA', 11),
+('Brendan', 'Smith', '1989-02-08', TIMESTAMPDIFF(YEAR, '1989-02-08', CURDATE()), 'D', '2024-06-30', 0, 'UFA', 11),
+('Kaapo', 'Kähkönen', '1996-08-16', TIMESTAMPDIFF(YEAR, '1996-08-16', CURDATE()), 'G', '2024-06-30', 0, 'UFA', 11);
+
+
+-- INSERT DEVILS BUYOUT
+INSERT INTO buyout (first_name, last_name, buyout_end_date, buyout_value, franchise_id) VALUES
+('Ilya', 'Kovalchuk', '2025-06-30', 250000, 11);
+
 select * from franchises;
