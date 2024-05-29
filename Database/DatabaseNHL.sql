@@ -416,4 +416,72 @@ INSERT INTO players (first_name, last_name, date_of_birth, age, position, contra
 ('Matt', 'Dumba', '1994-07-25', TIMESTAMPDIFF(YEAR, '1994-07-25', CURDATE()), 'D', '2024-06-30', 0, 'UFA', 8),
 ('Haydn', 'Fleury', '1996-07-08', TIMESTAMPDIFF(YEAR, '1996-07-08', CURDATE()), 'D', '2024-06-30', 0, 'UFA', 8),
 ('Logan', 'Brown', '1998-03-05', TIMESTAMPDIFF(YEAR, '1998-03-05', CURDATE()), 'F', '2024-06-30', 0, 'RFA', 8);
-select* from franchises;
+
+-- INSERT HURRICANES PLAYERS
+INSERT INTO players (first_name, last_name, date_of_birth, age, position, contract_end_date, contract_value, free_agent_status, franchise_id) VALUES
+('Sebastian', 'Aho', '1997-07-26', TIMESTAMPDIFF(YEAR, '1997-07-26', CURDATE()), 'F', '2032-06-30', 9750000, 'UFA', 9),
+('Andrei', 'Svechnikov', '2000-03-26', TIMESTAMPDIFF(YEAR, '2000-03-26', CURDATE()), 'W', '2029-06-30', 7750000, 'UFA', 9),
+('Jesperi', 'Kotkaniemi', '2000-07-06', TIMESTAMPDIFF(YEAR, '2000-07-06', CURDATE()), 'F', '2030-06-30', 4820000, 'UFA', 9),
+('Evgeny', 'Kuznetsov', '1992-05-19', TIMESTAMPDIFF(YEAR, '1992-05-19', CURDATE()), 'F', '2025-06-30', 3900000, 'UFA', 9),
+('Jordan', 'Staal', '1988-09-10', TIMESTAMPDIFF(YEAR, '1988-09-10', CURDATE()), 'F', '2027-06-30', 2900000, 'UFA', 9),
+('Jesper', 'Fast', '1991-12-02', TIMESTAMPDIFF(YEAR, '1991-12-02', CURDATE()), 'W', '2025-06-30', 2400000, 'UFA', 9),
+('Bradly', 'Nadeau', '2003-02-05', TIMESTAMPDIFF(YEAR, '2003-02-05', CURDATE()), 'W', '2027-06-30', 918333, 'RFA', 9),
+('Jackson', 'Blake', '2002-08-16', TIMESTAMPDIFF(YEAR, '2002-08-16', CURDATE()), 'W', '2026-06-30', 905833, 'RFA', 9),
+('Brendan', 'Lemieux', '1996-03-15', TIMESTAMPDIFF(YEAR, '1996-03-15', CURDATE()), 'W', '2025-06-30', 775000, 'UFA', 9),
+('Dmitry', 'Orlov', '1991-07-23', TIMESTAMPDIFF(YEAR, '1991-07-23', CURDATE()), 'D', '2025-06-30', 7750000, 'UFA', 9),
+('Jaccob', 'Slavin', '1994-05-01', TIMESTAMPDIFF(YEAR, '1994-05-01', CURDATE()), 'D', '2025-06-30', 5300000, 'UFA', 9),
+('Brent', 'Burns', '1985-03-09', TIMESTAMPDIFF(YEAR, '1985-03-09', CURDATE()), 'D', '2025-06-30', 5280000, 'UFA', 9),
+('Scott', 'Morrow', '2003-11-01', TIMESTAMPDIFF(YEAR, '2003-11-01', CURDATE()), 'D', '2026-06-30', 916667, 'RFA', 9),
+('Ronan', 'Seeley', '2003-08-02', TIMESTAMPDIFF(YEAR, '2003-08-02', CURDATE()), 'D', '2025-06-30', 810000, 'RFA', 9),
+('Frederik', 'Andersen', '1989-10-02', TIMESTAMPDIFF(YEAR, '1989-10-02', CURDATE()), 'G', '2025-06-30', 3400000, 'UFA', 9),
+('Pyotr', 'Kochetkov', '1999-06-25', TIMESTAMPDIFF(YEAR, '1999-06-25', CURDATE()), 'G', '2027-06-30', 2000000, 'UFA', 9),
+('Spencer', 'Martin', '1995-06-08', TIMESTAMPDIFF(YEAR, '1995-06-08', CURDATE()), 'G', '2025-06-30', 775000, 'UFA', 9);
+
+-- INSERT ADDITION OF HURRICANES PLAYERS AT THE END OF THEIR CONTRACT 
+INSERT INTO players (first_name, last_name, date_of_birth, age, position, contract_end_date, contract_value, free_agent_status, franchise_id) VALUES
+('Maxime', 'Comtois', '1999-01-08', TIMESTAMPDIFF(YEAR, '1999-01-08', CURDATE()), 'W', '2024-06-30', 0, 'RFA', 9),
+('Jack', 'Drury', '1998-02-03', TIMESTAMPDIFF(YEAR, '1998-02-03', CURDATE()), 'F', '2024-06-30', 0, 'RFA', 9),
+('Seth', 'Jarvis', '2002-02-01', TIMESTAMPDIFF(YEAR, '2002-02-01', CURDATE()), 'W', '2024-06-30', 0, 'RFA', 9),
+('Martin', 'Necas', '1999-01-15', TIMESTAMPDIFF(YEAR, '1999-01-15', CURDATE()), 'W', '2024-06-30', 0, 'RFA', 9),
+('Ryan', 'Suzuki', '2001-05-28', TIMESTAMPDIFF(YEAR, '2001-05-28', CURDATE()), 'F', '2024-06-30', 0, 'RFA', 9),
+('Jake', 'Guentzel', '1994-10-06', TIMESTAMPDIFF(YEAR, '1994-10-06', CURDATE()), 'W', '2024-06-30', 0, 'UFA', 9),
+('Jordan', 'Martinook', '1992-07-25', TIMESTAMPDIFF(YEAR, '1992-07-25', CURDATE()), 'W', '2024-06-30', 0, 'UFA', 9),
+('Stefan', 'Noesen', '1993-02-12', TIMESTAMPDIFF(YEAR, '1993-02-12', CURDATE()), 'W', '2024-06-30', 0, 'UFA', 9),
+('Teuvo', 'Teräväinen', '1994-09-11', TIMESTAMPDIFF(YEAR, '1994-09-11', CURDATE()), 'W', '2024-06-30', 0, 'UFA', 9),
+('Brett', 'Pesce', '1994-11-15', TIMESTAMPDIFF(YEAR, '1994-11-15', CURDATE()), 'D', '2024-06-30', 0, 'UFA', 9),
+('Brady', 'Skjei', '1994-03-26', TIMESTAMPDIFF(YEAR, '1994-03-26', CURDATE()), 'D', '2024-06-30', 0, 'UFA', 9);
+
+-- INSERT COLUMBUS PLAYERS
+INSERT INTO players (first_name, last_name, date_of_birth, age, position, contract_end_date, contract_value, free_agent_status, franchise_id) VALUES
+('Johnny', 'Gaudreau', '1993-08-13', TIMESTAMPDIFF(YEAR, '1993-08-13', CURDATE()), 'W', '2029-06-30', 9750000, 'UFA', 10),
+('Patrik', 'Laine', '1998-04-19', TIMESTAMPDIFF(YEAR, '1998-04-19', CURDATE()), 'F', '2026-06-30', 8700000, 'UFA', 10),
+('Boone', 'Jenner', '1993-06-15', TIMESTAMPDIFF(YEAR, '1993-06-15', CURDATE()), 'F', '2026-06-30', 3750000, 'UFA', 10),
+('Sean', 'Kuraly', '1993-01-20', TIMESTAMPDIFF(YEAR, '1993-01-20', CURDATE()), 'F', '2025-06-30', 2500000, 'UFA', 10),
+('Mathieu', 'Olivier', '1997-02-11', TIMESTAMPDIFF(YEAR, '1997-02-11', CURDATE()), 'W', '2025-06-30', 1100000, 'UFA', 10),
+('Justin', 'Danforth', '1993-03-15', TIMESTAMPDIFF(YEAR, '1993-03-15', CURDATE()), 'F', '2025-06-30', 1100000, 'UFA', 10),
+('Gavin', 'Brindley', '2004-01-14', TIMESTAMPDIFF(YEAR, '2004-01-14', CURDATE()), 'F', '2026-06-30', 950000, 'RFA', 10),
+('Adam', 'Fantilli', '2004-10-12', TIMESTAMPDIFF(YEAR, '2004-10-12', CURDATE()), 'F', '2026-06-30', 950000, 'RFA', 10),
+('Dmitri', 'Voronkov', '1999-09-10', TIMESTAMPDIFF(YEAR, '1999-09-10', CURDATE()), 'F', '2025-06-30', 925000, 'RFA', 10),
+('Zachary', 'Werenski', '1997-07-19', TIMESTAMPDIFF(YEAR, '1997-07-19', CURDATE()), 'D', '2028-06-30', 9583333, 'UFA', 10),
+('Damon', 'Severson', '1994-08-07', TIMESTAMPDIFF(YEAR, '1994-08-07', CURDATE()), 'D', '2031-06-30', 6250000, 'UFA', 10),
+('Ivan', 'Provorov', '1997-01-13', TIMESTAMPDIFF(YEAR, '1997-01-13', CURDATE()), 'D', '2025-06-30', 4725000, 'UFA', 10),
+('Erik', 'Gudbranson', '1992-01-07', TIMESTAMPDIFF(YEAR, '1992-01-07', CURDATE()), 'D', '2026-06-30', 4000000, 'UFA', 10),
+('Adam', 'Boqvist', '2000-08-15', TIMESTAMPDIFF(YEAR, '2000-08-15', CURDATE()), 'D', '2025-06-30', 2600000, 'RFA', 10),
+('Elvis', 'Merzlikins', '1994-04-13', TIMESTAMPDIFF(YEAR, '1994-04-13', CURDATE()), 'G', '2027-06-30', 5400000, 'UFA', 10),
+('Daniil', 'Tarasov', '1999-03-27', TIMESTAMPDIFF(YEAR, '1999-03-27', CURDATE()), 'G', '2025-06-30', 1050000, 'RFA', 10);
+
+-- INSERT ADDITION OF COLUMBUS PLAYERS AT THE END OF THEIR CONTRACT 
+INSERT INTO players (first_name, last_name, date_of_birth, age, position, contract_end_date, contract_value, free_agent_status, franchise_id) VALUES
+('Yegor', 'Chinakhov', '2001-02-01', TIMESTAMPDIFF(YEAR, '2001-02-01', CURDATE()), 'W', '2024-06-30', 0, 'RFA', 10),
+('Kirill', 'Marchenko', '2000-07-21', TIMESTAMPDIFF(YEAR, '2000-07-21', CURDATE()), 'W', '2024-06-30', 0, 'RFA', 10),
+('Alexander', 'Nylander', '1998-03-02', TIMESTAMPDIFF(YEAR, '1998-03-02', CURDATE()), 'W', '2024-06-30', 0, 'RFA', 10),
+('Cole', 'Sillinger', '2003-05-16', TIMESTAMPDIFF(YEAR, '2003-05-16', CURDATE()), 'F', '2024-06-30', 0, 'RFA', 10),
+('Alexandre', 'Texier', '1999-09-13', TIMESTAMPDIFF(YEAR, '1999-09-13', CURDATE()), 'F', '2024-06-30', 0, 'RFA', 10),
+('Carson', 'Meyer', '1997-08-26', TIMESTAMPDIFF(YEAR, '1997-08-26', CURDATE()), 'W', '2024-06-30', 0, 'UFA', 10),
+('Jake', 'Bean', '1998-06-09', TIMESTAMPDIFF(YEAR, '1998-06-09', CURDATE()), 'D', '2024-06-30', 0, 'RFA', 10),
+('Kent', 'Johnson', '2002-10-18', TIMESTAMPDIFF(YEAR, '2002-10-18', CURDATE()), 'F', '2024-06-30', 0, 'RFA', 10);
+
+-- INSERT COLUMBUS BUYOUT
+INSERT INTO buyout (first_name, last_name, buyout_end_date, buyout_value, franchise_id) VALUES
+('Alexander', 'Wennberg', '2025-06-30', 891667, 10);
+select * from franchises;
