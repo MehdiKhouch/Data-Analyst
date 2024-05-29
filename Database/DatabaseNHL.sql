@@ -521,4 +521,41 @@ INSERT INTO players (first_name, last_name, date_of_birth, age, position, contra
 INSERT INTO buyout (first_name, last_name, buyout_end_date, buyout_value, franchise_id) VALUES
 ('Ilya', 'Kovalchuk', '2025-06-30', 250000, 11);
 
+-- INSERT ISLANDERS PLAYERS
+INSERT INTO players (first_name, last_name, date_of_birth, age, position, contract_end_date, contract_value, free_agent_status, franchise_id) VALUES
+('Mathew', 'Barzal', '1997-05-26', TIMESTAMPDIFF(YEAR, '1997-05-26', CURDATE()), 'F', '2031-06-30', 9150000, 'UFA', 12),
+('Bo', 'Horvat', '1995-04-05', TIMESTAMPDIFF(YEAR, '1995-04-05', CURDATE()), 'F', '2031-06-30', 8500000, 'UFA', 12),
+('Anders', 'Lee', '1990-07-03', TIMESTAMPDIFF(YEAR, '1990-07-03', CURDATE()), 'W', '2026-06-30', 7000000, 'UFA', 12),
+('Brock', 'Nelson', '1991-10-15', TIMESTAMPDIFF(YEAR, '1991-10-15', CURDATE()), 'F', '2025-06-30', 6000000, 'UFA', 12),
+('Jean-Gabriel', 'Pageau', '1992-11-11', TIMESTAMPDIFF(YEAR, '1992-11-11', CURDATE()), 'F', '2026-06-30', 5000000, 'UFA', 12),
+('Kyle', 'Palmieri', '1991-02-01', TIMESTAMPDIFF(YEAR, '1991-02-01', CURDATE()), 'W', '2025-06-30', 5000000, 'UFA', 12),
+('Pierre', 'Engvall', '1996-05-31', TIMESTAMPDIFF(YEAR, '1996-05-31', CURDATE()), 'W', '2030-06-30', 3000000, 'UFA', 12),
+('Casey', 'Cizikas', '1991-02-27', TIMESTAMPDIFF(YEAR, '1991-02-27', CURDATE()), 'F', '2027-06-30', 2500000, 'UFA', 12),
+('Julien', 'Gauthier', '1997-10-15', TIMESTAMPDIFF(YEAR, '1997-10-15', CURDATE()), 'W', '2025-06-30', 787500, 'UFA', 12),
+('Hudson', 'Fasching', '1995-07-28', TIMESTAMPDIFF(YEAR, '1995-07-28', CURDATE()), 'W', '2025-06-30', 775000, 'UFA', 12),
+('Ryan', 'Pulock', '1994-10-06', TIMESTAMPDIFF(YEAR, '1994-10-06', CURDATE()), 'D', '2030-06-30', 6150000, 'UFA', 12),
+('Adam', 'Pelech', '1994-08-16', TIMESTAMPDIFF(YEAR, '1994-08-16', CURDATE()), 'D', '2029-06-30', 5750000, 'UFA', 12),
+('Noah', 'Dobson', '2000-01-07', TIMESTAMPDIFF(YEAR, '2000-01-07', CURDATE()), 'D', '2025-06-30', 4000000, 'RFA', 12),
+('Alexander', 'Romanov', '2000-01-06', TIMESTAMPDIFF(YEAR, '2000-01-06', CURDATE()), 'D', '2025-06-30', 2500000, 'RFA', 12),
+('Samuel', 'Bolduc', '2000-12-09', TIMESTAMPDIFF(YEAR, '2000-12-09', CURDATE()), 'D', '2025-06-30', 800000, 'RFA', 12),
+('Scott', 'Mayfield', '1992-10-14', TIMESTAMPDIFF(YEAR, '1992-10-14', CURDATE()), 'D', '2030-06-30', 3500000, 'UFA', 12),
+('Ilya', 'Sorokin', '1995-08-04', TIMESTAMPDIFF(YEAR, '1995-08-04', CURDATE()), 'G', '2032-06-30', 8250000, 'UFA', 12),
+('Semyon', 'Varlamov', '1988-04-27', TIMESTAMPDIFF(YEAR, '1988-04-27', CURDATE()), 'G', '2027-06-30', 2750000, 'UFA', 12);
+
+-- INSERT ADDITION OF ISLANDERS PLAYERS AT THE END OF THEIR CONTRACT 
+INSERT INTO players (first_name, last_name, date_of_birth, age, position, contract_end_date, contract_value, free_agent_status, franchise_id) VALUES
+('Simon', 'Holmström', '2000-05-24', TIMESTAMPDIFF(YEAR, '2000-05-24', CURDATE()), 'W', '2024-06-30', 0, 'RFA', 12),
+('Ruslan', 'Iskhakov', '2000-08-10', TIMESTAMPDIFF(YEAR, '2000-08-10', CURDATE()), 'F', '2024-06-30', 0, 'RFA', 12),
+('Kyle', 'MacLean', '1998-04-29', TIMESTAMPDIFF(YEAR, '1998-04-29', CURDATE()), 'F', '2024-06-30', 0, 'RFA', 12),
+('Oliver', 'Wahlstrom', '2000-06-13', TIMESTAMPDIFF(YEAR, '2000-06-13', CURDATE()), 'W', '2024-06-30', 0, 'RFA', 12),
+('Cal', 'Clutterbuck', '1987-11-18', TIMESTAMPDIFF(YEAR, '1987-11-18', CURDATE()), 'W', '2024-06-30', 0, 'UFA', 12),
+('Karson', 'Kuhlman', '1995-09-26', TIMESTAMPDIFF(YEAR, '1995-09-26', CURDATE()), 'W', '2024-06-30', 0, 'UFA', 12),
+('Matt', 'Martin', '1989-05-08', TIMESTAMPDIFF(YEAR, '1989-05-08', CURDATE()), 'W', '2024-06-30', 0, 'UFA', 12),
+('Brian', 'Pinho', '1995-05-11', TIMESTAMPDIFF(YEAR, '1995-05-11', CURDATE()), 'F', '2024-06-30', 0, 'UFA', 12),
+('Dennis', 'Cholowski', '1998-02-15', TIMESTAMPDIFF(YEAR, '1998-02-15', CURDATE()), 'D', '2024-06-30', 0, 'RFA', 12),
+('Sebastian', 'Aho', '1996-02-17', TIMESTAMPDIFF(YEAR, '1996-02-17', CURDATE()), 'D', '2024-06-30', 0, 'UFA', 12),
+('Robert', 'Bortuzzo', '1989-03-18', TIMESTAMPDIFF(YEAR, '1989-03-18', CURDATE()), 'D', '2024-06-30', 0, 'UFA', 12),
+('Mike', 'Reilly', '1993-07-13', TIMESTAMPDIFF(YEAR, '1993-07-13', CURDATE()), 'D', '2024-06-30', 0, 'UFA', 12),
+('Robin', 'Salo', '1998-10-13', TIMESTAMPDIFF(YEAR, '1998-10-13', CURDATE()), 'D', '2024-06-30', 0, 'UFA', 12);
+
 select * from franchises;
