@@ -591,4 +591,105 @@ INSERT INTO players (first_name, last_name, date_of_birth, age, position, contra
 ('Erik', 'Gustafsson', '1992-03-14', TIMESTAMPDIFF(YEAR, '1992-03-14', CURDATE()), 'D', '2024-06-30', 0, 'UFA', 13),
 ('Chad', 'Ruhwedel', '1990-05-07', TIMESTAMPDIFF(YEAR, '1990-05-07', CURDATE()), 'D', '2024-06-30', 0, 'UFA', 13);
 
+-- INSERT FLYERS PLAYERS
+INSERT INTO players (first_name, last_name, date_of_birth, age, position, contract_end_date, contract_value, free_agent_status, franchise_id) VALUES
+('Sean', 'Couturier', '1992-12-07', TIMESTAMPDIFF(YEAR, '1992-12-07', CURDATE()), 'F', '2031-06-30', 7750000, 'UFA', 14),
+('Owen', 'Tippett', '1999-02-16', TIMESTAMPDIFF(YEAR, '1999-02-16', CURDATE()), 'W', '2032-06-30', 6200000, 'UFA', 14),
+('Cam', 'Atkinson', '1989-06-05', TIMESTAMPDIFF(YEAR, '1989-06-05', CURDATE()), 'W', '2025-06-30', 5875000, 'UFA', 14),
+('Travis', 'Konecny', '1997-03-11', TIMESTAMPDIFF(YEAR, '1997-03-11', CURDATE()), 'W', '2025-06-30', 5500000, 'UFA', 14),
+('Joel', 'Farabee', '2000-02-25', TIMESTAMPDIFF(YEAR, '2000-02-25', CURDATE()), 'W', '2028-06-30', 5000000, 'UFA', 14),
+('Ryan', 'Johansen', '1992-07-31', TIMESTAMPDIFF(YEAR, '1992-07-31', CURDATE()), 'F', '2025-06-30', 4000000, 'UFA', 14),
+('Scott', 'Laughton', '1994-05-30', TIMESTAMPDIFF(YEAR, '1994-05-30', CURDATE()), 'F', '2026-06-30', 3000000, 'UFA', 14),
+('Noah', 'Cates', '1999-02-14', TIMESTAMPDIFF(YEAR, '1999-02-14', CURDATE()), 'F', '2025-06-30', 2625000, 'RFA', 14),
+('Garnet', 'Hathaway', '1991-11-23', TIMESTAMPDIFF(YEAR, '1991-11-23', CURDATE()), 'W', '2025-06-30', 2375000, 'UFA', 14),
+('Morgan', 'Frost', '1999-05-14', TIMESTAMPDIFF(YEAR, '1999-05-14', CURDATE()), 'F', '2025-06-30', 2100000, 'RFA', 14),
+('Ryan', 'Poehling', '1999-01-03', TIMESTAMPDIFF(YEAR, '1999-01-03', CURDATE()), 'F', '2026-06-30', 1900000, 'UFA', 14),
+('Nicolas', 'Deslauriers', '1991-02-22', TIMESTAMPDIFF(YEAR, '1991-02-22', CURDATE()), 'W', '2026-06-30', 1750000, 'UFA', 14),
+('Tyson', 'Foerster', '2002-01-18', TIMESTAMPDIFF(YEAR, '2002-01-18', CURDATE()), 'W', '2025-06-30', 863333, 'RFA', 14),
+('Travis', 'Sanheim', '1996-03-29', TIMESTAMPDIFF(YEAR, '1996-03-29', CURDATE()), 'D', '2031-06-30', 6250000, 'UFA', 14),
+('Nick', 'Seeler', '1993-06-03', TIMESTAMPDIFF(YEAR, '1993-06-03', CURDATE()), 'D', '2028-06-30', 2700000, 'UFA', 14),
+('Jamie', 'Drysdale', '2002-04-08', TIMESTAMPDIFF(YEAR, '2002-04-08', CURDATE()), 'D', '2026-06-30', 2300000, 'RFA', 14),
+('Cam', 'York', '2001-01-05', TIMESTAMPDIFF(YEAR, '2001-01-05', CURDATE()), 'D', '2025-06-30', 1600000, 'RFA', 14),
+('Rasmus', 'Ristolainen', '1994-10-27', TIMESTAMPDIFF(YEAR, '1994-10-27', CURDATE()), 'D', '2027-06-30', 5100000, 'UFA', 14),
+('Ryan', 'Ellis', '1991-01-03', TIMESTAMPDIFF(YEAR, '1991-01-03', CURDATE()), 'D', '2027-06-30', 6250000, 'UFA', 14),
+('Ivan', 'Fedotov', '1996-11-28', TIMESTAMPDIFF(YEAR, '1996-11-28', CURDATE()), 'G', '2025-06-30', 3275000, 'UFA', 14),
+('Samuel', 'Ersson', '1999-10-20', TIMESTAMPDIFF(YEAR, '1999-10-20', CURDATE()), 'G', '2025-06-30', 1450000, 'RFA', 14);
+
+-- INSERT ADDITION OF FLYERS PLAYERS AT THE END OF THEIR CONTRACT 
+INSERT INTO players (first_name, last_name, date_of_birth, age, position, contract_end_date, contract_value, free_agent_status, franchise_id) VALUES
+('Denis', 'Gurianov', '1997-06-07', TIMESTAMPDIFF(YEAR, '1997-06-07', CURDATE()), 'W', '2024-06-30', 0, 'UFA', 14), 
+('Yegor', 'Zamula', '2000-03-30', TIMESTAMPDIFF(YEAR, '2000-03-30', CURDATE()), 'D', '2024-06-30', 0, 'RFA', 14),
+('Erik', 'Johnson', '1988-03-21', TIMESTAMPDIFF(YEAR, '1988-03-21', CURDATE()), 'D', '2024-06-30', 0, 'UFA', 14),
+('Marc', 'Staal', '1987-01-13', TIMESTAMPDIFF(YEAR, '1987-01-13', CURDATE()), 'D', '2024-06-30', 0, 'UFA', 14),
+('Carter', 'Hart', '1998-08-13', TIMESTAMPDIFF(YEAR, '1998-08-13', CURDATE()), 'G', '2024-06-30', 0, 'RFA', 14);
+
+-- INSERT FLYERS BUYOUT
+INSERT INTO buyout (first_name, last_name, buyout_end_date, buyout_value, franchise_id) VALUES
+('Cal', 'Petersen', '2025-06-30', 3850000, 14), 
+('Kevin', 'Hayes', '2026-06-30',3571428, 14), 
+('Anthony', 'Deangelo', '2025-06-30', 1666667, 14);
+
+-- INSERT PENGUINS PLAYERS
+INSERT INTO players (first_name, last_name, date_of_birth, age, position, contract_end_date, contract_value, free_agent_status, franchise_id) VALUES
+('Sidney', 'Crosby', '1987-08-07', TIMESTAMPDIFF(YEAR, '1987-08-07', CURDATE()), 'F', '2025-06-30', 8700000, 'UFA', 15),
+('Evgeni', 'Malkin', '1986-07-31', TIMESTAMPDIFF(YEAR, '1986-07-31', CURDATE()), 'F', '2026-06-30', 6100000, 'UFA', 15),
+('Bryan', 'Rust', '1992-05-11', TIMESTAMPDIFF(YEAR, '1992-05-11', CURDATE()), 'W', '2028-06-30', 5125000, 'UFA', 15),
+('Rickard', 'Rakell', '1993-05-05', TIMESTAMPDIFF(YEAR, '1993-05-05', CURDATE()), 'W', '2028-06-30', 5000000, 'UFA', 15),
+('Reilly', 'Smith', '1991-04-01', TIMESTAMPDIFF(YEAR, '1991-04-01', CURDATE()), 'W', '2025-06-30', 5000000, 'UFA', 15),
+('Michael', 'Bunting', '1995-09-17', TIMESTAMPDIFF(YEAR, '1995-09-17', CURDATE()), 'W', '2026-06-30', 4500000, 'UFA', 15),
+('Lars', 'Eller', '1989-05-08', TIMESTAMPDIFF(YEAR, '1989-05-08', CURDATE()), 'F', '2025-06-30', 2450000, 'UFA', 15),
+('Drew', 'O\'Connor', '1998-06-09', TIMESTAMPDIFF(YEAR, '1998-06-09', CURDATE()), 'W', '2025-06-30', 925000, 'UFA', 15),
+('Jesse', 'Puljujärvi', '1998-05-07', TIMESTAMPDIFF(YEAR, '1998-05-07', CURDATE()), 'W', '2025-06-30', 800000, 'UFA', 15),
+('Erik', 'Karlsson', '1990-05-31', TIMESTAMPDIFF(YEAR, '1990-05-31', CURDATE()), 'D', '2027-06-30', 10000000, 'UFA', 15),
+('Kris', 'Letang', '1987-04-24', TIMESTAMPDIFF(YEAR, '1987-04-24', CURDATE()), 'D', '2028-06-30', 6100000, 'UFA', 15),
+('Marcus', 'Pettersson', '1996-05-08', TIMESTAMPDIFF(YEAR, '1996-05-08', CURDATE()), 'D', '2025-06-30', 4025175, 'UFA', 15),
+('John', 'Ludvig', '1999-08-02', TIMESTAMPDIFF(YEAR, '1999-08-02', CURDATE()), 'D', '2025-06-30', 775000, 'RFA', 15),
+('Tristan', 'Jarry', '1995-04-29', TIMESTAMPDIFF(YEAR, '1995-04-29', CURDATE()), 'G', '2028-06-30', 5375000, 'UFA', 15),
+('Ryan', 'Graves', '1995-05-21', TIMESTAMPDIFF(YEAR, '1995-05-21', CURDATE()), 'D', '2029-06-30', 4500000, 'UFA', 15),
+('Noel', 'Acciari', '1991-12-01', TIMESTAMPDIFF(YEAR, '1991-12-01', CURDATE()), 'F', '2026-06-30', 2000000, 'UFA', 15),
+('Matt', 'Nieto', '1992-11-05', TIMESTAMPDIFF(YEAR, '1992-11-05', CURDATE()), 'W', '2025-06-30', 900000, 'UFA', 15);
+
+-- INSERT ADDITION OF PENGUIS PLAYERS AT THE END OF THEIR CONTRACT 
+INSERT INTO players (first_name, last_name, date_of_birth, age, position, contract_end_date, contract_value, free_agent_status, franchise_id) VALUES
+('Emil', 'Bemström', '1999-06-01', TIMESTAMPDIFF(YEAR, '1999-06-01', CURDATE()), 'W', '2024-06-30', 0, 'RFA', 15),
+('Jansen', 'Harkins', '1997-05-23', TIMESTAMPDIFF(YEAR, '1997-05-23', CURDATE()), 'W', '2024-06-30', 0, 'UFA', 15),
+('Alex', 'Nedeljkovic', '1996-01-07', TIMESTAMPDIFF(YEAR, '1996-01-07', CURDATE()), 'G', '2024-06-30', 0, 'UFA', 15);
+
+-- INSERT PENGUINS BUYOUT
+INSERT INTO buyout (first_name, last_name, buyout_end_date, buyout_value, franchise_id) VALUES
+('Jeff', 'Petry', '2025-06-30', 1562500, 15),
+('Jack', 'Johnson', '2026-06-30', 916667, 15);
+
+-- INSERT CAPITALS PLAYERS
+INSERT INTO players (first_name, last_name, date_of_birth, age, position, contract_end_date, contract_value, free_agent_status, franchise_id) VALUES
+('Alex', 'Ovechkin', '1985-09-17', TIMESTAMPDIFF(YEAR, '1985-09-17', CURDATE()), 'W', '2026-06-30', 9500000, 'UFA', 16),
+('Nicklas', 'Bäckström', '1987-11-23', TIMESTAMPDIFF(YEAR, '1987-11-23', CURDATE()), 'F', '2026-06-30', 9200000, 'UFA', 16),
+('Tom', 'Wilson', '1994-03-29', TIMESTAMPDIFF(YEAR, '1994-03-29', CURDATE()), 'W', '2031-06-30', 6500000, 'UFA', 16),
+('T.J.', 'Oshie', '1986-12-23', TIMESTAMPDIFF(YEAR, '1986-12-23', CURDATE()), 'W', '2025-06-30', 5750000, 'UFA', 16),
+('Dylan', 'Strome', '1997-03-07', TIMESTAMPDIFF(YEAR, '1997-03-07', CURDATE()), 'F', '2027-06-30', 5000000, 'UFA', 16),
+('Aliaksei', 'Protas', '2000-01-06', TIMESTAMPDIFF(YEAR, '2000-01-06', CURDATE()), 'F', '2028-06-30', 3375000, 'UFA', 16),
+('Sonny', 'Milano', '1996-05-12', TIMESTAMPDIFF(YEAR, '1996-05-12', CURDATE()), 'W', '2025-06-30', 1900000, 'UFA', 16),
+('Nic', 'Dowd', '1990-05-27', TIMESTAMPDIFF(YEAR, '1990-05-27', CURDATE()), 'F', '2025-06-30', 1300000, 'UFA', 16),
+('Michael', 'Sgarbossa', '1992-07-25', TIMESTAMPDIFF(YEAR, '1992-07-25', CURDATE()), 'F', '2025-06-30', 775000, 'UFA', 16),
+('John', 'Carlson', '1990-01-10', TIMESTAMPDIFF(YEAR, '1990-01-10', CURDATE()), 'D', '2026-06-30', 8000000, 'UFA', 16),
+('Rasmus', 'Sandin', '2000-03-07', TIMESTAMPDIFF(YEAR, '2000-03-07', CURDATE()), 'D', '2029-06-30', 4600000, 'UFA', 16),
+('Nick', 'Jensen', '1990-09-21', TIMESTAMPDIFF(YEAR, '1990-09-21', CURDATE()), 'D', '2026-06-30', 4050000, 'UFA', 16),
+('Ethan', 'Bear', '1997-06-26', TIMESTAMPDIFF(YEAR, '1997-06-26', CURDATE()), 'D', '2025-06-30', 2062500, 'UFA', 16),
+('Trevor', 'van Riemsdyk', '1991-07-24', TIMESTAMPDIFF(YEAR, '1991-07-24', CURDATE()), 'D', '2026-06-30', 3000000, 'UFA', 16),
+('Martin', 'Fehérváry', '1999-10-06', TIMESTAMPDIFF(YEAR, '1999-10-06', CURDATE()), 'D', '2026-06-30', 2675000, 'RFA', 16),
+('Alexander', 'Alexeyev', '1999-11-15', TIMESTAMPDIFF(YEAR, '1999-11-15', CURDATE()), 'D', '2025-06-30', 825000, 'RFA', 16),
+('Darcy', 'Kuemper', '1990-05-05', TIMESTAMPDIFF(YEAR, '1990-05-05', CURDATE()), 'G', '2026-06-30', 5250000, 'UFA', 16),
+('Charlie', 'Lindgren', '1993-12-18', TIMESTAMPDIFF(YEAR, '1993-12-18', CURDATE()), 'G', '2025-06-30', 1100000, 'UFA', 16);
+
+-- INSERT ADDITION OF CAPITALS PLAYERS AT THE END OF THEIR CONTRACT 
+INSERT INTO players (first_name, last_name, date_of_birth, age, position, contract_end_date, contract_value, free_agent_status, franchise_id) VALUES
+('Beck', 'Malenstyn', '1996-02-04', TIMESTAMPDIFF(YEAR, '1996-02-04', CURDATE()), 'W', '2024-06-30', 0, 'RFA', 16),
+('Connor', 'McMichael', '2000-01-15', TIMESTAMPDIFF(YEAR, '2000-01-15', CURDATE()), 'F', '2024-06-30', 0, 'RFA', 16),
+('Nicolas', 'Aubé-Kubel', '1996-05-10', TIMESTAMPDIFF(YEAR, '1996-05-10', CURDATE()), 'W', '2024-06-30', 0, 'UFA', 16),
+('Max', 'Pacioretty', '1988-11-20', TIMESTAMPDIFF(YEAR, '1988-11-20', CURDATE()), 'W', '2024-06-30', 0, 'UFA', 16);
+
+-- INSERT CAPITALS BUYOUT
+INSERT INTO buyout (first_name, last_name, buyout_end_date, buyout_value, franchise_id) VALUES
+('Evgeny', 'Kuznetsov', '2025-06-30', 3500000, 16);
+
 select * from franchises;
