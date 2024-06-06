@@ -692,4 +692,14 @@ INSERT INTO players (first_name, last_name, date_of_birth, age, position, contra
 INSERT INTO buyout (first_name, last_name, buyout_end_date, buyout_value, franchise_id) VALUES
 ('Evgeny', 'Kuznetsov', '2025-06-30', 3500000, 16);
 
-select * from franchises;
+-- INSERT BLACKHAWKS PLAYERS
+INSERT INTO players (first_name, last_name, date_of_birth, age, position, contract_end_date, contract_value, free_agent_status, franchise_id) VALUES
+
+
+-- INSERT ADDITION OF BLACKHAWKS PLAYERS AT THE END OF THEIR CONTRACT 
+INSERT INTO players (first_name, last_name, date_of_birth, age, position, contract_end_date, contract_value, free_agent_status, franchise_id) VALUES
+
+
+
+-- INSERT BLACKHAWKS BUYOUT
+INSERT INTO buyout (first_name, last_name, buyout_end_date, buyout_value, franchise_id) VALUES
